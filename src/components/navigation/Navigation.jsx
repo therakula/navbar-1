@@ -32,7 +32,7 @@ const MenuItem = ({ type, linkData, handleActiveMenu, index, activeMenu }) => {
 
   useEffect(() => {
     if (activeMenu !== index && isOpen) setIsOpen(false);
-  }, [activeMenu, isOpen]);
+  }, [activeMenu, isOpen, index]);
 
   return (
     <li onClick={type === "main" ? () => null : handleLink}>
