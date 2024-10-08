@@ -1,0 +1,5 @@
+main.main {
+  margin-inline: auto;
+  padding-top: 4rem;
+  width: min(1280px, 100% - 15px);
+}

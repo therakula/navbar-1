@@ -1,0 +1,8 @@
+@media screen and (width <= 500px) {
+  .burger {
+    display: block;
+  }
+  .navigation.main {
+    display: none;
+  }
+}

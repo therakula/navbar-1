@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+#root {
+  --submenu-width: 120px;
+  --submenu-padding: 1rem;
+  --right-on-hover: calc(var(--submenu-width) / 4 * -1);
+  /* border: 1px solid red; */
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}

@@ -1,0 +1,19 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: min(calc(100% - 15px), 300px);
+  height: 100dvh;
+  background-color: rgb(15, 17, 36);
+
+  transition: all 420ms ease-in-out;
+
+  display: grid;
+  place-items: start center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

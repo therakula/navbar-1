@@ -1,0 +1,71 @@
+.navigation,
+.sub-navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation.main {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.navigation > li {
+  position: relative;
+  font-size: clamp(0.938rem, 0.513vw + 0.777rem, 1.188rem);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navigation.main .sub-navigation {
+  position: absolute;
+  right: -60px;
+  width: var(--submenu-width);
+  text-align: center;
+  display: none;
+  opacity: 0;
+  transition: all 500ms;
+  transition-behavior: allow-discrete;
+}
+
+.sub-navigation {
+  background-color: rgb(154, 152, 152);
+  overflow: hidden;
+  font-size: 1rem;
+  padding: 0;
+  border-radius: 5px;
+
+  & li:hover {
+    background-color: rgb(123, 90, 154);
+  }
+}
+
+.navigation.main li:hover > .sub-navigation {
+  display: block;
+  opacity: 1;
+  right: var(--right-on-hover);
+
+  @starting-style {
+    opacity: 0;
+    right: 30px;
+  }
+}
+
+/* sidebar navigation */
+
+/* .navigation.side > li {
+  padding: 4px;
+} */
+
+.navigation.side .sub-navigation {
+  transition: all 0.2s ease-in-out;
+  & li {
+    padding: 2px 8px;
+  }
+}
+
+.navigation.side li {
+  text-align: center;
+}
